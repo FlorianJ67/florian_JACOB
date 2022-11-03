@@ -7,7 +7,7 @@ $Strphrase = mb_strtoupper($phrase);
 $paltest = str_replace(" ","",$Strphrase);
 
 if($paltest == strrev($paltest)){
-    echo "La phrase $phrase est palindrome";
+    echo "La phrase « $phrase » est palindrome";
 } else echo "La phrase $phrase n'est pas un palindrome";
 
 ?>
