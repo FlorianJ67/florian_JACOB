@@ -9,14 +9,26 @@ $userT = [
 ];
 
 foreach ($userT as $user => $langue) {
-     if ($langue == "FRA") {
+    if ($langue == "FRA") {
         echo "Salut ";
-     } else if ($langue == "ESP") {
+    } else if ($langue == "ESP") {
         echo "Hola ";
-     } else if ($langue == "ENG") {
+    } else if ($langue == "ENG") {
         echo "Hello ";
     }
     echo $user. "<br>";
- }
+}
+
+ksort($userT);
+foreach ($userT as $user => $langue) {
+    if ($langue == "FRA") {
+        echo "Salut ";
+    } else if ($langue == "ESP") {
+        echo "Hola ";
+    } else if ($langue == "ENG") {
+        echo "Hello ";
+    }
+    echo $user. "<br>";
+}
 
 ?>
