@@ -12,7 +12,7 @@ if ($change < 0){
     echo "Montant à payer : $price €<br>
         Montant versé : $payment €<br>
         Reste à payer : $change €<br>";
-} if ($change = 0) {
+} if ($change == 0) {
 } else {
     $ten = 0;
     $five = 0;
@@ -22,25 +22,27 @@ if ($change < 0){
     Rendu de monaie :<br>";
     while ($change >= 10) {
         $ten++;
-        $change--;
-        echo "test while";
+        $change= $change-10;
         if ($change < 10) {
-            echo "test";
             echo "$ten billet de 10€ - ";
         }
     } while ($change >= 5) {
         $five++;
-        $change--;
-    } echo "$five billet de 5€ - ";
-    while ($change >= 2) {
+        $change= $change-5;
+        if ($change < 5) {
+        echo "$five billet de 5€ - ";
+        }
+    } while ($change >= 2) {
         $two++;
-        $change--;
-    } echo "$two pièce de 2€ - ";
+        $change= $change-2;
+        if ($change < 2) {
+            echo "$two pièce de 2€ - ";
+        }
+    } 
     if ($change >= 1) {
         $one++;
         $change--;
         echo "$one pièce de 1€";
     }
 }
-
 ?>
