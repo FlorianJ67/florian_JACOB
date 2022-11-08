@@ -14,9 +14,13 @@ $table = [
     9
 ];
 
+$i = 0;
+$Tnote = 0;
+foreach ($table as $exo => $note) {
+    $i++;
+    $Tnote += $note; 
+} 
 
-
-$moyenne = ;
-
-echo "Sa moyenne générale est donc de :" $moyenne;
+$moyenne = $Tnote / $i;
+echo "Sa moyenne générale est donc de : $moyenne " ;
 ?>
