@@ -54,7 +54,6 @@ class Personne {
         echo $this->getFirstName() ." ". $this->getName() ." a " .$age->y. " ans<br>";
     
     }
-
 };
 
 //creation des utilisateur
