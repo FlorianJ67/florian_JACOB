@@ -61,9 +61,10 @@ class Personne {
 $p1 = new Personne("DUPONT","Michel","1980-02-19");
 $p2 = new Personne("DUCHEMIN","Alice","1985-01-17");
 
+//test remplacement NOM
 $p1->setName("DUPOND");
-//fonction d'affichage utilisateur
 
+//fonction d'affichage utilisateur
 $p1->displayUser();
 
 ?>
